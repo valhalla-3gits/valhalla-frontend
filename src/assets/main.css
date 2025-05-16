@@ -1,0 +1,38 @@
+/* src/assets/main.css (or your equivalent global CSS file) */
+
+:root {
+  /* Color Palette */
+  --color-primary-green: #01FF00;
+  --color-background-dark: #050C05;
+  --color-text-primary: #ebdbb2; /* Text often matches primary */
+  --color-text-on-primary: #050C05; /* Text on green buttons */
+  --color-border-primary: var(--color-primary-green);
+  --color-placeholder-bg: #333; /* Example for placeholders */
+  --color-placeholder-border: #555; /* Example for placeholders */
+  --color-error-primary: #ff4d4d;
+
+  /* Typography */
+  --font-family-monospace: "ShureTechMono Nerd Font Mono", monospace;
+  --font-family-sans: Arial, sans-serif; /* Example for other text */
+
+  /* Other reusable values */
+  --border-radius: 4px;
+  --padding-standard: 1rem;
+}
+
+/* Optional: Apply base styles */
+body {
+  background-color: var(--color-background-dark);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-monospace); /* Set default font */
+  margin: 0.5rem; /* Reset default body margin */
+}
+
+/* Optional: Style links globally */
+a {
+  color: var(--color-primary-green);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
