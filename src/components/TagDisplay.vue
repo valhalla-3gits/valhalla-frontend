@@ -1,11 +1,11 @@
 <template>
-  <span class="tag-display" :style="tagStyle">
-    <slot>{{ text }}</slot>
-  </span>
+  <div class="tag-display" :style="tagStyle">
+    <p class="tag-content">{{ text }}</p>
+  </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType, computed, CSSProperties } from 'vue'
+import { defineComponent, type PropType, computed, type CSSProperties } from 'vue'
 
 // Define possible predefined color types or allow any string for custom colors
 type TagColor = 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | string
@@ -63,7 +63,7 @@ export default defineComponent({
       }
       if (props.borderColor) {
         style.borderColor = props.borderColor
-        style.borderWidth = '1px'
+        style.borderWidth = '5px'
         style.borderStyle = 'solid'
       }
       return style
@@ -79,13 +79,17 @@ export default defineComponent({
 <style scoped>
 .tag-display {
   display: inline-block; /* Or inline-flex if you plan to add icons inside */
-  padding: 0.3em 0.7em; /* Adjust padding as needed */
-  border-radius: var(--border-radius, 4px); /* Use global border radius */
+  padding: 0.5rem 0.5rem; /* Adjust padding as needed */
   font-family: var(--font-family-monospace);
   font-weight: bold; /* Tags are often bold */
-  line-height: 1.2; /* Adjust for vertical alignment */
-  text-align: center;
+  line-height: 1; /* Adjust for vertical alignment */
+  /*height: 1rem;*/
   white-space: nowrap; /* Prevent wrapping */
   cursor: default; /* Or 'pointer' if tags are interactive */
+}
+
+.tag-content {
+  margin: auto;
+  text-align: center;
 }
 </style>

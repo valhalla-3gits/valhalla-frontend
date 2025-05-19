@@ -4,11 +4,11 @@ export class UserRegisterDto {
     this.username = "";
     this.password = "";
     this.firstname = "";
-    this.secondname = "";
+    this.lastname = "";
   }
 
   readonly username: string;
   readonly password: string;
   readonly firstname: string;
-  readonly secondname: string;
+  readonly lastname: string;
 }

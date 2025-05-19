@@ -7,7 +7,7 @@
       </span>
       <!-- Replace with your actual GitHub repo URL -->
       <a
-        href="https://github.com/your-repo"
+        href="https://github.com/valhalla-3gits"
       target="_blank"
       rel="noopener noreferrer"
       class="footer__github-link"

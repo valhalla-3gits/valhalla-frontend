@@ -12,7 +12,8 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, PropType } from 'vue'
+import { computed, defineComponent } from 'vue'
+import type {PropType} from 'vue'
 
 export default defineComponent({
   name: 'ContentBox',
@@ -73,6 +74,7 @@ export default defineComponent({
   /* The 'magic' part: Background matches the page background to hide the border */
   background-color: var(--color-background-dark);
   white-space: nowrap; /* Prevent title from wrapping */
+  z-index: 1;
 }
 
 .box-content {

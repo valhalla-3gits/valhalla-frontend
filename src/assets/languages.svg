@@ -205,14 +205,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.1486625"
-     inkscape:cx="382.18361"
-     inkscape:cy="185.86834"
+     inkscape:cx="382.61892"
+     inkscape:cy="185.86835"
      inkscape:window-width="2536"
      inkscape:window-height="1380"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer5" />
+     inkscape:current-layer="layer5"
+     showgrid="false" />
   <g
      inkscape:groupmode="layer"
      id="layer2"
@@ -377,6 +378,17 @@
          id="tspan58-0"
          x="493.47211"
          y="173.94672"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'ShureTechMono Nerd Font Mono';-inkscape-font-specification:'ShureTechMono Nerd Font Mono, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fafafa">Coming soon</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:18.6667px;line-height:1.25;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:none;text-align:center;text-anchor:middle;display:inline"
+       x="493.47211"
+       y="80.613014"
+       id="text58-1-6"><tspan
+         sodipodi:role="line"
+         id="tspan58-0-7"
+         x="493.47211"
+         y="80.613014"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:'ShureTechMono Nerd Font Mono';-inkscape-font-specification:'ShureTechMono Nerd Font Mono, Normal';font-variant-ligatures:none;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#fafafa">Coming soon</tspan></text>
     <text
        xml:space="preserve"
@@ -621,7 +633,7 @@
        transform="translate(549.88567,10.323576)"><tspan
          x="65.190308"
          y="509.36993"
-         id="tspan3">Lisp</tspan></text>
+         id="tspan1">Lisp</tspan></text>
     <text
        xml:space="preserve"
        id="text57-9"
@@ -629,7 +641,7 @@
        transform="translate(733.12167,10.323576)"><tspan
          x="45.750275"
          y="509.36993"
-         id="tspan7">Clojure</tspan></text>
+         id="tspan2">Clojure</tspan></text>
     <text
        xml:space="preserve"
        id="text57-4"
@@ -637,7 +649,7 @@
        transform="translate(183.37166,-83.009924)"><tspan
          x="52.230286"
          y="509.36993"
-         id="tspan15">Groovy</tspan></text>
+         id="tspan3">Groovy</tspan></text>
     <text
        xml:space="preserve"
        id="text57-6"
@@ -645,7 +657,7 @@
        transform="translate(367.23766,-174.30342)"><tspan
          x="65.190308"
          y="509.36993"
-         id="tspan16">Perl</tspan></text>
+         id="tspan4">Perl</tspan></text>
     <text
        xml:space="preserve"
        id="text57-6-7"
@@ -653,7 +665,7 @@
        transform="translate(537.20151,-269.67642)"><tspan
          x="39.804382"
          y="509.36993"
-         id="tspan17">TypeScript</tspan></text>
+         id="tspan5">TypeScript</tspan></text>
     <text
        xml:space="preserve"
        id="text57-6-2"
@@ -661,7 +673,7 @@
        transform="translate(183.20032,-361.67772)"><tspan
          x="71.670319"
          y="509.36993"
-         id="tspan18">SQL</tspan></text>
+         id="tspan6">SQL</tspan></text>
     <text
        xml:space="preserve"
        id="text57-1"
@@ -669,7 +681,7 @@
        transform="translate(0.17765961,12.363577)"><tspan
          x="78.15033"
          y="509.36993"
-         id="tspan19">F#</tspan></text>
+         id="tspan7">F#</tspan></text>
     <text
        xml:space="preserve"
        id="text57-9-0"
@@ -677,7 +689,7 @@
        transform="translate(366.63766,-80.969923)"><tspan
          x="65.190308"
          y="509.36993"
-         id="tspan20">Dart</tspan></text>
+         id="tspan8">Dart</tspan></text>
     <text
        xml:space="preserve"
        id="text57-4-8"
@@ -685,7 +697,7 @@
        transform="translate(550.37766,-174.30342)"><tspan
          x="65.190308"
          y="509.36993"
-         id="tspan21">Rust</tspan></text>
+         id="tspan9">Rust</tspan></text>
     <text
        xml:space="preserve"
        id="text57-6-5"
@@ -693,7 +705,7 @@
        transform="translate(699.68196,-267.63642)"><tspan
          x="47.737915"
          y="509.36993"
-         id="tspan22">Visual Basic</tspan></text>
+         id="tspan10">Visual Basic</tspan></text>
     <text
        xml:space="preserve"
        id="text57-6-7-0"
@@ -701,7 +713,7 @@
        transform="translate(366.12699,-360.96972)"><tspan
          x="78.15033"
          y="509.36993"
-         id="tspan23">Go</tspan></text>
+         id="tspan11">Go</tspan></text>
     <text
        xml:space="preserve"
        id="text57-6-2-6"
@@ -709,7 +721,7 @@
        transform="translate(0.45366821,-456.34327)"><tspan
          x="52.230286"
          y="509.36993"
-         id="tspan24">Python</tspan></text>
+         id="tspan12">Python</tspan></text>
     <text
        xml:space="preserve"
        id="text57-8"
@@ -717,7 +729,7 @@
        transform="translate(183.41366,12.363577)"><tspan
          x="58.710297"
          y="509.36993"
-         id="tspan25">Julia</tspan></text>
+         id="tspan13">Julia</tspan></text>
     <text
        xml:space="preserve"
        id="text57-9-2"
@@ -725,7 +737,7 @@
        transform="translate(549.90367,-80.969923)"><tspan
          x="71.670319"
          y="509.36993"
-         id="tspan26">Lua</tspan></text>
+         id="tspan14">Lua</tspan></text>
     <text
        xml:space="preserve"
        id="text57-4-6"
@@ -733,7 +745,7 @@
        transform="translate(733.51766,-176.34342)"><tspan
          x="39.270264"
          y="509.36993"
-         id="tspan27">Assembly</tspan></text>
+         id="tspan15">Assembly</tspan></text>
     <text
        xml:space="preserve"
        id="text57-6-9"
@@ -741,7 +753,7 @@
        transform="translate(-24.724951,-176.34342)"><tspan
          x="45.512848"
          y="509.36993"
-         id="tspan28">Objective C</tspan></text>
+         id="tspan16">Objective C</tspan></text>
     <text
        xml:space="preserve"
        id="text57-6-7-1"
@@ -749,7 +761,7 @@
        transform="translate(549.05365,-360.96972)"><tspan
          x="71.670319"
          y="509.36993"
-         id="tspan29">PHP</tspan></text>
+         id="tspan17">PHP</tspan></text>
     <text
        xml:space="preserve"
        id="text57-6-2-1"
@@ -757,7 +769,7 @@
        transform="translate(183.27534,-454.30327)"><tspan
          x="84.630341"
          y="509.36993"
-         id="tspan30">C</tspan></text>
+         id="tspan18">C</tspan></text>
     <text
        xml:space="preserve"
        id="text57-3"
@@ -765,7 +777,7 @@
        transform="translate(366.64966,12.363577)"><tspan
          x="52.230286"
          y="509.36993"
-         id="tspan31">Elixir</tspan></text>
+         id="tspan19">Elixir</tspan></text>
     <text
        xml:space="preserve"
        id="text57-9-5"
@@ -773,7 +785,7 @@
        transform="translate(733.16967,-80.969923)"><tspan
          x="45.750275"
          y="509.36993"
-         id="tspan32">Haskell</tspan></text>
+         id="tspan20">Haskell</tspan></text>
     <text
        xml:space="preserve"
        id="text57-4-4"
@@ -781,7 +793,7 @@
        transform="translate(0.10565338,-80.969923)"><tspan
          x="58.710297"
          y="509.36993"
-         id="tspan33">Scala</tspan></text>
+         id="tspan21">Scala</tspan></text>
     <text
        xml:space="preserve"
        id="text57-6-4"
@@ -789,7 +801,7 @@
        transform="translate(184.09766,-174.30342)"><tspan
          x="52.230286"
          y="509.36993"
-         id="tspan34">Kotlin</tspan></text>
+         id="tspan22">Kotlin</tspan></text>
     <text
        xml:space="preserve"
        id="text57-6-7-6"
@@ -797,7 +809,7 @@
        transform="translate(733.18166,-360.96972)"><tspan
          x="84.630341"
          y="509.36993"
-         id="tspan35">R</tspan></text>
+         id="tspan23">R</tspan></text>
     <text
        xml:space="preserve"
        id="text57-6-2-69"
@@ -805,7 +817,7 @@
        transform="translate(366.097,-454.30327)"><tspan
          x="65.190308"
          y="509.36993"
-         id="tspan36">Java</tspan></text>
+         id="tspan24">Java</tspan></text>
     <text
        xml:space="preserve"
        id="text57-13"
@@ -813,7 +825,7 @@
        transform="translate(367.32165,-267.63642)"><tspan
          x="52.230286"
          y="509.36993"
-         id="tspan37">MATLAB</tspan></text>
+         id="tspan25">MATLAB</tspan></text>
     <text
        xml:space="preserve"
        id="text57-9-59"
@@ -821,7 +833,7 @@
        transform="translate(183.94765,-269.67642)"><tspan
          x="65.190308"
          y="509.36993"
-         id="tspan38">Ruby</tspan></text>
+         id="tspan26">Ruby</tspan></text>
     <text
        xml:space="preserve"
        id="text57-4-49"
@@ -829,7 +841,7 @@
        transform="translate(0.57364807,-267.63642)"><tspan
          x="58.710297"
          y="509.36993"
-         id="tspan39">Swift</tspan></text>
+         id="tspan27">Swift</tspan></text>
     <text
        xml:space="preserve"
        id="text57-6-58"
@@ -837,7 +849,7 @@
        transform="translate(-8.8679489,-363.00972)"><tspan
          x="35.451843"
          y="509.36993"
-         id="tspan40">JavaScript</tspan></text>
+         id="tspan28">JavaScript</tspan></text>
     <text
        xml:space="preserve"
        id="text57-6-7-4"
@@ -845,7 +857,7 @@
        transform="translate(732.94168,-454.30327)"><tspan
          x="78.15033"
          y="509.36993"
-         id="tspan41">C#</tspan></text>
+         id="tspan29">C#</tspan></text>
     <text
        xml:space="preserve"
        id="text57-6-2-4"
@@ -853,6 +865,6 @@
        transform="translate(548.91867,-454.30327)"><tspan
          x="71.670319"
          y="509.36993"
-         id="tspan42">C++</tspan></text>
+         id="tspan30">C++</tspan></text>
   </g>
 </svg>

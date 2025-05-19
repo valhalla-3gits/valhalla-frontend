@@ -1,4 +1,5 @@
 /* src/assets/main.css (or your equivalent global CSS file) */
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
 
 :root {
   /* Color Palette */
@@ -18,6 +19,16 @@
   /* Other reusable values */
   --border-radius: 4px;
   --padding-standard: 1rem;
+
+  --color-success-tag-bg: #98971a;
+  --color-danger-tag-bg: #fb4934;
+  --color-processing-tag-bg: #7c6f64;
+  --color-pending-tag-bg: #458588;
+  --color-default-tag-bg: #665c54;
+  --color-text-on-dark-tag: #ebdbb2;
+
+  --color-danger: #fb4934;
+  --color-danger-rgb: 251, 73, 52;
 }
 
 /* Optional: Apply base styles */
@@ -33,6 +44,7 @@ a {
   color: var(--color-primary-green);
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }

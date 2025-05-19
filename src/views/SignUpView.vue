@@ -124,7 +124,7 @@ export default defineComponent({
           username: this.formData.username,
           password: this.formData.password,
           firstname: this.formData.firstName,
-          secondname: this.formData.secondName,
+          lastname: this.formData.secondName,
         });
 
         // On successful signup

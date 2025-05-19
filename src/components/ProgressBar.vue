@@ -24,7 +24,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, computed, CSSProperties } from 'vue';
+import { defineComponent, computed, type CSSProperties } from 'vue';
 
 export default defineComponent({
   name: 'ProgressBar',
@@ -78,13 +78,6 @@ export default defineComponent({
       default: '10px', // e.g., '10px', '0.8rem'
     },
     /**
-     * Border radius for the progress bar.
-     */
-    borderRadius: {
-      type: String,
-      default: 'var(--border-radius-small, 4px)',
-    },
-    /**
      * Whether to show the "currentValue / maxValue" text.
      */
     showValueText: {
@@ -127,7 +120,6 @@ export default defineComponent({
       width: `${percentage.value}%`,
       backgroundColor: props.fillColor,
       height: '100%', // Fill height of the track
-      borderRadius: props.borderRadius, // Apply to fill for consistent rounding
       transition: 'width 0.3s ease-in-out', // Smooth transition on value change
     }));
 
@@ -155,8 +147,7 @@ export default defineComponent({
 .progress-bar-track {
   flex-grow: 1; /* Track takes available space */
   background-color: var(--trackColor, #1a241a); /* Use prop or fallback */
-  border-radius: var(--border-radius); /* Use prop */
-  height: 5rem; /* Use prop */
+  height: 1rem; /* Use prop */
   overflow: hidden; /* Ensures fill doesn't overflow rounded corners */
   position: relative; /* For potential future absolute positioned elements inside track */
 }

@@ -8,15 +8,21 @@
         <div class="rank-info">
           <span class="rank-label current-rank">{{ `Rank #${user.rank?.number}` }}</span>
           <span v-if="userStats" class="xp-text">
-          {{ userStats.currentXp?.toLocaleString() || 0 }} / {{ userStats.xpToNextRank?.toLocaleString() || 'N/A' }}
-        </span>
+            {{ userStats.currentXp?.toLocaleString() || 0 }} /
+            {{ userStats.xpToNextRank?.toLocaleString() || 'N/A' }}
+          </span>
           <span v-if="user.rank?.targetValue" class="rank-label next-rank">
-          {{ `Rank #${user.rank?.number + 1}` }}
-        </span>
+            {{ `Rank #${user.rank?.number + 1}` }}
+          </span>
         </div>
 
         <ProgressBar
-          v-if="userStats && typeof userStats.currentXp === 'number' && typeof userStats.xpToNextRank === 'number' && userStats.xpToNextRank > 0"
+          v-if="
+            userStats &&
+            typeof userStats.currentXp === 'number' &&
+            typeof userStats.xpToNextRank === 'number' &&
+            userStats.xpToNextRank > 0
+          "
           :currentValue="userStats.currentXp"
           :maxValue="userStats.xpToNextRank"
           height="12px"
@@ -27,14 +33,13 @@
           XP: {{ userStats.currentXp?.toLocaleString() || 0 }}
         </div>
 
-
         <p v-if="userStats" class="tasks-completed">
           Tasks completed: {{ userStats.tasksCompleted?.toLocaleString() || 0 }}
         </p>
 
         <div class="profile-actions">
           <IconButton
-            iconClass="fas fa-pencil-alt"
+            iconClass="nf nf-md-pencil"
             tooltip="Edit Profile"
             ariaLabel="Edit your profile"
             @click="emitEditProfile"
@@ -42,12 +47,11 @@
           />
           <!-- Example: Deleting account is a sensitive action -->
           <IconButton
-            iconClass="fas fa-trash-alt"
-            tooltip="Delete Account (Not Implemented)"
+            iconClass="nf nf-fa-trash"
+            tooltip="Delete Account"
             ariaLabel="Delete your account"
             @click="handleDeleteAccount"
             variant="danger"
-            :disabled="true"
           />
           <BaseButton
             text="Log Out"
@@ -62,7 +66,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from 'vue'
+import { defineComponent, type PropType } from 'vue'
 import ContentBox from './ContentBox.vue'    // Adjust path
 import ProgressBar from './ProgressBar.vue'  // Adjust path
 import IconButton from './IconButton.vue'    // Adjust path
@@ -111,8 +115,8 @@ export default defineComponent({
   },
   emits: {
     'logout': () => true,
-    'edit-profile': () => true
-    // 'delete-account': () => true, // If you implement this
+    'edit-profile': () => true,
+    'delete-account': () => true // If you implement this
   },
   methods: {
     emitLogout() {
@@ -122,12 +126,7 @@ export default defineComponent({
       this.$emit('edit-profile')
     },
     handleDeleteAccount() {
-      // This is a placeholder. Actual account deletion is a complex and sensitive operation.
-      if (confirm('Account deletion is a permanent action and not yet fully implemented. Are you sure you wish to simulate this?')) {
-        console.warn('Simulating account deletion for user:', this.user?.username)
-        // this.$emit('delete-account');
-        alert('Account deletion simulated. In a real app, this would require further steps and confirmation.')
-      }
+      this.$emit('delete-account')
     }
   }
 })
@@ -195,7 +194,6 @@ export default defineComponent({
   opacity: 0.8;
   margin-bottom: 0.5rem;
 }
-
 
 .profile-progress-bar {
   width: 100%;

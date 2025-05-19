@@ -16,7 +16,6 @@
           <tr>
             <th>Name</th>
             <th>Rank</th>
-            <th>Date</th>
             <th>Language</th>
             <th>Actions</th>
           </tr>
@@ -28,13 +27,13 @@
             <td data-label="Language">{{ task.language.name || 'N/A' }}</td>
             <td data-label="Actions" class="actions-cell">
               <IconButton
-                iconClass="fas fa-pencil-alt"
+                iconClass="nf nf-md-pencil"
                 tooltip="Edit Task"
                 @click="emitEditTask(task.token)"
                 aria-label="Edit task"
               />
               <IconButton
-                iconClass="fas fa-trash-alt"
+                iconClass="nf nf-fa-trash"
                 tooltip="Delete Task"
                 @click="emitDeleteTask(task.token)"
                 aria-label="Delete task"
@@ -85,22 +84,16 @@ export default defineComponent({
     'edit-task': (taskToken: string | number) => true,
     'delete-task': (taskToken: string | number) => true,
   },
-  setup(props) {
-    const emitCreateTask = () => {
-      this.$emit('create-task')
-    }
-    const emitEditTask = (taskToken: string | number) => {
+  methods: {
+    emitEditTask(taskToken: string | number) {
       this.$emit('edit-task', taskToken)
-    }
-    const emitDeleteTask = (taskToken: string | number) => {
+    },
+    emitCreateTask() {
+      this.$emit('create-task')
+    },
+    emitDeleteTask(taskToken: string | number) {
       this.$emit('delete-task', taskToken)
-    }
-
-    return {
-      emitCreateTask,
-      emitEditTask,
-      emitDeleteTask,
-    }
+    },
   },
 })
 </script>

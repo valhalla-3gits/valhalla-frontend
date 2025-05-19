@@ -17,6 +17,8 @@ interface User {
   // Add other user properties as needed
 }
 
+// This interface is exported for components that need to use it
+// but it's not stored in the auth store anymore
 export interface UserFull {
   token: string
   username: string
@@ -30,7 +32,6 @@ export interface UserFull {
 
 interface AuthState {
   user: User | null
-  userFull: UserFull | null
   accessToken: string | null
   refreshToken: string | null
   isAuthenticated: boolean
@@ -43,15 +44,10 @@ const getInitialUser = (): User | null => {
   const userString = localStorage.getItem('user')
   return userString ? JSON.parse(userString) : null
 }
-const getInitialUserFull = (): UserFull | null => {
-  const userString = localStorage.getItem('userFull')
-  return userString ? JSON.parse(userString) : null
-}
 
 export const useAuthStore = defineStore('auth', {
   state: (): AuthState => ({
     user: getInitialUser(),
-    userFull: getInitialUserFull(),
     accessToken: getInitialAccessToken(),
     refreshToken: getInitialRefreshToken(),
     isAuthenticated: !!getInitialAccessToken(),
@@ -59,7 +55,6 @@ export const useAuthStore = defineStore('auth', {
 
   getters: {
     currentUser: (state): User | null => state.user,
-    fullUser: (state): UserFull | null => state.userFull,
     isUserAuthenticated: (state): boolean => state.isAuthenticated,
     getAccessToken: (state): string | null => state.accessToken,
   },
@@ -83,6 +78,7 @@ export const useAuthStore = defineStore('auth', {
       this.isAuthenticated = false
 
       localStorage.removeItem('user')
+      localStorage.removeItem('userFull')
       localStorage.removeItem('accessToken')
       localStorage.removeItem('refreshToken')
     },
@@ -114,7 +110,6 @@ export const useAuthStore = defineStore('auth', {
           this.setAuthData(response.data.user, response.data.accessToken, response.data.refreshToken)
           console.log('Login successful, user:', this.user)
           // Navigate to a protected route after login
-          await this.fetchUserProfile();
           router.push('/dashboard') // Or your desired authenticated route
         } else {
           throw new Error('Invalid login response from server')
@@ -169,20 +164,6 @@ export const useAuthStore = defineStore('auth', {
       router.push('/login') // Redirect to login page
     },
 
-    // Action to fetch user profile if not available or needs update
-    async fetchUserProfile() {
-      if (!this.isAuthenticated || !this.accessToken) return
-      try {
-        const response = await apiClient.get<UserFull>('/users') // Example endpoint
-        this.user = response.data
-        localStorage.setItem('userFull', JSON.stringify(this.user))
-      } catch (error) {
-        console.error('Failed to fetch user profile:', error)
-        // Potentially logout if token is invalid
-        if ((error as any).response?.status === 401) {
-          this.logout()
-        }
-      }
-    },
+    // We no longer fetch user profile separately - basic user data is only loaded during login
   },
 })

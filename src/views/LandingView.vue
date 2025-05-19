@@ -148,7 +148,7 @@ export default defineComponent({
     },
     navigateToGitHub() {
       // Replace with your actual GitHub repository URL
-      window.open('https://github.com/your-repo/valhalla-code', '_blank', 'noopener,noreferrer')
+      window.open('https://github.com/valhalla-3gits', '_blank', 'noopener,noreferrer')
     },
   },
 })

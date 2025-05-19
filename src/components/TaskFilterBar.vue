@@ -15,7 +15,6 @@
         v-model="internalSelectedRank"
         :options="rankOptions"
         :placeholder="rankFilterPlaceholder"
-        button-label="Rank"
         class="filter-dropdown"
       />
       <DropdownFilter
@@ -23,7 +22,6 @@
         v-model="internalSelectedLanguage"
         :options="languageOptions"
         :placeholder="languageFilterPlaceholder"
-        button-label="Language"
         class="filter-dropdown"
       />
       <DropdownFilter

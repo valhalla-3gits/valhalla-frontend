@@ -22,7 +22,7 @@
             About
           </router-link>
           <a
-            href="https://github.com/your-repo"
+            href="https://github.com/valhalla-3gits"
             target="_blank"
             rel="noopener noreferrer"
             class="nav-link"
@@ -41,7 +41,7 @@
         <!-- User Variant -->
         <div v-else-if="variant === 'user'" class="nav-links">
           <a
-            href="https://github.com/your-repo"
+            href="https://github.com/valhalla-3gits"
             target="_blank"
             rel="noopener noreferrer"
             class="nav-link"
